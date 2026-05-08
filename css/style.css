@@ -991,6 +991,126 @@ th {
   border-radius: 14px;
 }
 
+/* ── 著者プロフィールカード ── */
+.author-card {
+  margin: 34px 0 10px;
+  padding: 22px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.author-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--coral-soft);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 1.4rem;
+}
+.author-info h4 {
+  font-size: 0.88rem;
+  margin: 0 0 4px;
+  color: var(--ink);
+}
+.author-info p {
+  font-size: 0.78rem;
+  margin: 0;
+  color: var(--body);
+  line-height: 1.7;
+}
+.author-info .author-role {
+  font-size: 0.72rem;
+  color: var(--muted);
+  display: block;
+  margin-top: 6px;
+}
+
+/* ── ママメモ（AIっぽさを排除したcallout代替） ── */
+.mama-note {
+  margin: 24px 0;
+  padding: 20px;
+  background: #fffaf0;
+  border: 1px solid #f0e0d0;
+  border-radius: 12px;
+  position: relative;
+}
+.mama-note::before {
+  content: "✍️ 先輩ママの声";
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--coral);
+  margin-bottom: 8px;
+  letter-spacing: 0.4px;
+}
+.mama-note p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.8;
+  color: var(--body);
+}
+
+/* ── 選び方のチェック（迷った時の基準に代わる） ── */
+.check-guide {
+  margin: 28px 0;
+  padding: 0;
+  list-style: none;
+}
+.check-guide li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.check-guide li:last-child {
+  border-bottom: none;
+}
+.check-guide .check-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.check-guide .check-text strong {
+  display: block;
+  font-size: 0.92rem;
+  margin-bottom: 3px;
+  color: var(--ink);
+}
+.check-guide .check-text span {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--body);
+  line-height: 1.7;
+}
+
+/* ── 予算別おすすめテーブル ── */
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.86rem;
+}
+.budget-table th {
+  padding: 10px 14px;
+  background: var(--ink);
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+}
+.budget-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.budget-table tr:last-child td {
+  border-bottom: none;
+}
+
 .article-credit {
   margin-top: 34px;
   text-align: right;
