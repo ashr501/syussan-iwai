@@ -7,7 +7,7 @@
 <meta name="description" content="実際に喜ばれやすい出産祝いをランキング形式で紹介。2人目にも選びやすい現金、ギフトカード、消耗品、体験ギフトを整理しています。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -32,18 +32,31 @@
 
 <main class="article-page">
   <article>
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <a href="../index.html">ホーム</a>
+      <span class="sep">&gt;</span>
+      <a href="../index.html#gift-shelf">記事</a>
+      <span class="sep">&gt;</span>
+      <span class="current">本当に嬉しかった出産祝いランキング</span>
+    </nav>
+
     <header class="article-header">
-      <span class="cat-badge green">嬉しかったもの</span>
+      <span class="cat-badge">嬉しいもの</span>
       <h1>本当に嬉しかった出産祝いランキング</h1>
-      <p class="article-meta">2025年5月更新 ｜ 使いやすさ・贈りやすさ・被りにくさで整理</p>
+      <p class="article-meta"><time datetime="2025-05">2025年5月更新</time> ｜ 使いやすさ・贈りやすさ・被りにくさで整理</p>
     </header>
 
-    <div class="article-img-wrap">
-      <div class="article-img-blob"></div>
-      <div class="article-img">
-        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=900&q=80" alt="赤ちゃん用品のギフト" loading="lazy">
-      </div>
+    <div class="article-img">
+      <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=900&q=80" alt="赤ちゃん用品のギフト" loading="lazy">
     </div>
+
+    <nav class="toc" aria-label="目次">
+      <div class="toc-title">目次</div>
+      <ol class="toc-list">
+        <li><a href="#ranking-top10">嬉しかった出産祝い TOP10</a></li>
+        <li><a href="#budget-guide">予算別の選び方</a></li>
+      </ol>
+    </nav>
 
     <div class="article-body">
       <p>「気持ちはうれしいけれど、物が増えるのは少し困る」。出産祝いでは、そんな本音も少なくありません。だからこそ最近は、見た目のかわいさだけでなく、生活の中でちゃんと使えるものが選ばれています。</p>
@@ -53,7 +66,7 @@
         <p>ここに、ランキング上位ギフトや予算別おすすめ商品のアフィリエイトリンクを挿入できます。</p>
       </aside>
 
-      <h2>嬉しかった出産祝い TOP10</h2>
+      <h2 id="ranking-top10">嬉しかった出産祝い TOP10</h2>
       <ol class="ranking">
         <li class="ranking-item top1">
           <span class="ranking-num">1</span>
@@ -127,7 +140,7 @@
         </li>
       </ol>
 
-      <h2>予算別の選び方</h2>
+      <h2 id="budget-guide">予算別の選び方</h2>
       <div class="table-wrap">
         <table>
           <thead>
@@ -142,8 +155,7 @@
         </table>
       </div>
 
-      <div class="callout green">
-        <span class="callout-icon">INFO</span>
+      <div class="callout">
         <div class="callout-body">
           <p><strong>迷ったときの基準</strong><br>サイズを選ばない、好みを選びすぎない、すぐ使える。この3つを満たすと、贈る側も受け取る側も気が楽です。</p>
         </div>
@@ -151,9 +163,30 @@
 
       <p>出産祝いは、立派なものを選ぶより「今の生活が少し楽になるもの」を選ぶ方が喜ばれることがあります。特に2人目以降は、華やかさよりも実用性に寄せるのがおすすめです。</p>
 
-      <p class="article-credit"><strong>文：本音カタログ編集部</strong><span>口コミ・編集部ヒアリング・ギフト利用シーンをもとに再構成しています。</span></p>
+      <div class="article-credit">
+        <strong>文：本音カタログ編集部</strong>
+        <span>口コミ・編集部ヒアリング・ギフト利用シーンをもとに再構成しています。</span>
+      </div>
     </div>
   </article>
+
+  <section class="related-articles">
+    <h3>あわせて読みたい</h3>
+    <div class="related-grid">
+      <a href="second-child-gifts.html" class="related-card">
+        <span class="cat-badge">2人目</span>
+        <strong>2人目にもういらないもの・欲しいもの</strong>
+      </a>
+      <a href="unwanted-gifts-ranking.html" class="related-card">
+        <span class="cat-badge">困ったもの</span>
+        <strong>もらって困った出産祝いランキングTOP10</strong>
+      </a>
+      <a href="catalog-diaper-cake-trend.html" class="related-card">
+        <span class="cat-badge">トレンド</span>
+        <strong>カタログギフトとおむつケーキが人気？</strong>
+      </a>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">

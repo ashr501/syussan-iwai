@@ -7,7 +7,7 @@
 <meta name="description" content="出産内祝いの金額目安、のし、お礼状、選びやすい品をコンパクトに整理。将来的な内祝い専門サイト化にもつなげやすい基本ページです。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -32,22 +32,37 @@
 
 <main class="article-page">
   <article>
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <a href="../index.html">ホーム</a>
+      <span class="sep">&gt;</span>
+      <a href="../index.html#gift-shelf">内祝い</a>
+      <span class="sep">&gt;</span>
+      <span class="current">出産内祝いの基本ガイド</span>
+    </nav>
+
     <header class="article-header">
-      <span class="cat-badge purple">内祝い</span>
+      <span class="cat-badge">内祝い</span>
       <h1>出産内祝いの基本ガイド</h1>
-      <div class="article-meta">
-        <span>2025年5月更新</span>
+      <p class="article-meta">
+        <time datetime="2025-05">2025年5月更新</time>
         <span>読了約5分</span>
         <span>専門サイト化前の基本ページ</span>
-      </div>
+      </p>
     </header>
 
-    <div class="article-img-wrap">
-      <div class="article-img-blob"></div>
-      <div class="article-img">
-        <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=900&q=80" alt="内祝いのギフトボックス" loading="lazy">
-      </div>
+    <div class="article-img">
+      <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=900&q=80" alt="内祝いのギフトボックス" loading="lazy">
     </div>
+
+    <nav class="toc" aria-label="目次">
+      <div class="toc-title">目次</div>
+      <ol class="toc-list">
+        <li><a href="#basics">内祝いの基本</a></li>
+        <li><a href="#recommended">選びやすい内祝い</a></li>
+        <li><a href="#avoid">避けた方がいい内祝い</a></li>
+        <li><a href="#letter-sample">お礼状の短い文例</a></li>
+      </ol>
+    </nav>
 
     <div class="article-body">
       <p>出産祝いをいただいたあとに考えるのが「内祝い」です。出産直後は生活が慌ただしいため、金額やのし、贈る時期まで一つずつ調べるのは負担になりがちです。</p>
@@ -57,7 +72,7 @@
         <p>ここに、内祝い向けカタログギフト・スイーツギフト・タオルギフトのアフィリエイトリンクを挿入できます。</p>
       </aside>
 
-      <h2>内祝いの基本</h2>
+      <h2 id="basics">内祝いの基本</h2>
       <div class="table-wrap">
         <table>
           <thead>
@@ -72,7 +87,7 @@
         </table>
       </div>
 
-      <h2>選びやすい内祝い</h2>
+      <h2 id="recommended">選びやすい内祝い</h2>
       <ol class="ranking">
         <li class="ranking-item top1">
           <span class="ranking-num">1</span>
@@ -97,7 +112,7 @@
         </li>
       </ol>
 
-      <h2>避けた方がいい内祝い</h2>
+      <h2 id="avoid">避けた方がいい内祝い</h2>
       <ul>
         <li>赤ちゃん用品だけのギフト。内祝いはお祝いをくれた相手へのお返しです。</li>
         <li>保存期間が短い生鮮食品。受け取りのタイミングが難しくなります。</li>
@@ -105,16 +120,14 @@
         <li>名入れが強すぎる品。相手が使いにくいことがあります。</li>
       </ul>
 
-      <div class="callout yellow">
-        <span class="callout-icon">INFO</span>
+      <div class="callout">
         <div class="callout-body">
           <p><strong>別サイト化するなら</strong><br>内祝いは「相場」「関係性」「品物ジャンル」「のし・お礼状」だけで記事が増やせます。出産祝いサイトとは検索意図が違うため、将来的には別ドメインや別カテゴリで育てる余地があります。</p>
         </div>
       </div>
 
-      <h2>お礼状の短い文例</h2>
-      <div class="callout coral">
-        <span class="callout-icon">INFO</span>
+      <h2 id="letter-sample">お礼状の短い文例</h2>
+      <div class="callout">
         <div class="callout-body">
           <p>このたびは温かいお祝いをいただき、ありがとうございました。おかげさまで母子ともに元気に過ごしております。心ばかりではございますが、内祝いの品をお送りいたします。今後ともどうぞよろしくお願いいたします。</p>
         </div>
@@ -122,9 +135,30 @@
 
       <p>内祝いは、完璧にしようとすると悩みが増えます。まずは早めにお礼を伝え、相手が受け取りやすいものを選ぶこと。それだけでも、十分に気持ちは伝わります。</p>
 
-      <p class="article-credit"><strong>文：本音カタログ編集部</strong><span>一般的なマナーと編集部ヒアリングをもとに再構成しています。</span></p>
+      <div class="article-credit">
+        <strong>文：本音カタログ編集部</strong>
+        <span>一般的なマナーと編集部ヒアリングをもとに再構成しています。</span>
+      </div>
     </div>
   </article>
+
+  <section class="related-articles">
+    <h3>あわせて読みたい</h3>
+    <div class="related-grid">
+      <a href="appreciated-gifts-ranking.html" class="related-card">
+        <span class="cat-badge">嬉しいもの</span>
+        <strong>本当に嬉しかった出産祝いランキング</strong>
+      </a>
+      <a href="second-child-gifts.html" class="related-card">
+        <span class="cat-badge">2人目</span>
+        <strong>2人目にもういらないもの・欲しいもの</strong>
+      </a>
+      <a href="unwanted-gifts-ranking.html" class="related-card">
+        <span class="cat-badge">困ったもの</span>
+        <strong>もらって困った出産祝いランキングTOP10</strong>
+      </a>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
