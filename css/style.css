@@ -3,18 +3,20 @@
 :root {
   --white: #ffffff;
   --bg: #fafafa;
-  --ink: #1a1a1a;
-  --body: #333333;
-  --muted: #777777;
+  --ink: #1d3a74;
+  --body: #2e374d;
+  --muted: #65708a;
   --line: #e0e0e0;
-  --accent: #b8865a;
-  --accent-light: #f5ede4;
-  --accent-soft: #faf3ec;
+  --accent: #ff6568;
+  --accent-light: #fff0f1;
+  --accent-soft: #fff7f7;
   --badge-bg: #f0f0f0;
   --max: 1160px;
   --article-max: 760px;
   --page: clamp(16px, 4vw, 32px);
   --radius: 8px;
+  --radius-lg: 22px;
+  --shadow-lg: 0 24px 60px rgba(29, 58, 116, 0.12);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -132,6 +134,7 @@ a { color: inherit; text-decoration: none; }
   padding: 32px var(--page) 0;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  align-items: center;
   gap: 32px;
 }
 
@@ -192,11 +195,11 @@ a { color: inherit; text-decoration: none; }
 
 .button.primary {
   color: var(--white);
-  background: var(--ink);
+  background: var(--accent);
 }
 
 .button.primary:hover {
-  background: #333;
+  background: var(--ink);
 }
 
 .button.secondary {
@@ -219,6 +222,7 @@ a { color: inherit; text-decoration: none; }
 .hero-side {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -261,6 +265,7 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
   display: block;
 }
 
