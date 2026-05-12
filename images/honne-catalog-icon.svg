@@ -1,14 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ホンネカタログ">
   <defs>
-    <linearGradient id="coral" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ff7b7d"/>
+    <linearGradient id="paperWarm" x1="10" y1="8" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff9f4"/>
+      <stop offset="1" stop-color="#ffe8df"/>
+    </linearGradient>
+    <linearGradient id="ribbonCoral" x1="16" y1="10" x2="50" y2="53" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8a8c"/>
       <stop offset="1" stop-color="#ff6568"/>
     </linearGradient>
   </defs>
-  <rect x="6" y="8" width="52" height="44" rx="18" fill="url(#coral)"/>
-  <path d="M21 51c2.9-.2 5.7-1 8.2-2.4l.8-.4h14c7.8 0 14-6.1 14-13.8V26c0-8.7-7-15.8-15.8-15.8H21.8C13 10.2 6 17.3 6 26v8.4C6 42.1 12.2 48.2 20 48.2h1.2L21 51z" fill="#ff6568"/>
-  <circle cx="26" cy="28" r="6.2" fill="#fff8df"/>
-  <circle cx="40" cy="28" r="6.2" fill="#fff8df"/>
-  <path d="M23 40c2.6-4.2 15.4-4.2 18 0" fill="none" stroke="#fff8df" stroke-width="4.4" stroke-linecap="round"/>
-  <path d="M17.5 19.5h29" stroke="#fff" stroke-width="2.8" stroke-linecap="round" opacity=".85"/>
+  <rect x="4" y="5" width="56" height="54" rx="18" fill="#fff7f2"/>
+  <path d="M13.3 12.5c8.5-2.8 24.2-3.2 36.5.5 3.2 1 5.3 4 5.2 7.4l-.8 26.8c-.1 4.7-4.3 8.1-8.9 7.4-9.7-1.6-21.1-.8-29.6 1.8-4.6 1.4-9.2-2-9.2-6.8V21.3c0-4 2.8-7.4 6.8-8.8z" fill="#fff" stroke="#f6d2c8" stroke-width="1.4"/>
+  <path d="M18.7 15.6c7-1.6 18.3-1.5 27.6.6 2.3.5 3.8 2.5 3.8 4.8l-.7 23.9c-.1 3-2.8 5.2-5.7 4.8-8.2-1.2-17-.6-24.7 1.7-3.1.9-6.2-1.4-6.2-4.6V21.4c0-2.8 2.3-5.1 5.9-5.8z" fill="url(#paperWarm)"/>
+  <path d="M12.5 22.4c8.5-3.2 24-3.1 37.1-.5" fill="none" stroke="#ffb2a6" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M22.8 31h18.4M22.8 37.6h15.8M22.8 44.2h20.5" fill="none" stroke="#1d3a74" stroke-width="2.3" stroke-linecap="round" opacity=".78"/>
+  <path d="M18.6 13.9l5.1 8.7 4.8-10.1 4.5 10.4 5.2-8.6" fill="none" stroke="url(#ribbonCoral)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28.5 12.7v39" stroke="url(#ribbonCoral)" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M51.2 36.1c3.8 0 6.8 2.8 6.8 6.2s-3 6.1-6.8 6.1h-3.5l-5.4 4.4 1.2-4.4h-.9c-3.8 0-6.8-2.7-6.8-6.1s3-6.2 6.8-6.2h8.6z" fill="#1d3a74"/>
+  <path d="M42.7 42.3h8.6" stroke="#fff8df" stroke-width="2.2" stroke-linecap="round"/>
 </svg>
