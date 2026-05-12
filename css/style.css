@@ -11,6 +11,10 @@
   --accent-light: #fff0f1;
   --accent-soft: #fff7f7;
   --badge-bg: #f0f0f0;
+  --mint: #edf8f2;
+  --peach: #fff3ef;
+  --butter: #fff8df;
+  --sky: #eef5ff;
   --max: 1160px;
   --article-max: 760px;
   --page: clamp(16px, 4vw, 32px);
@@ -399,6 +403,10 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.8;
 }
 
+.feature-cta {
+  margin-top: 14px;
+}
+
 .feature-side {
   display: grid;
   gap: 10px;
@@ -460,7 +468,7 @@ a { color: inherit; text-decoration: none; }
   display: inline-block;
   margin-bottom: 8px;
   padding: 2px 8px;
-  background: var(--badge-gb);
+  background: var(--badge-bg);
   border-radius: 3px;
   font-size: 0.65rem;
   font-weight: 700;
@@ -574,6 +582,291 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
   background: var(--badge-bg);
   letter-spacing: 0.03em;
+}
+
+
+/* ─── Affiliate Catalog ─── */
+.buy-buttons {
+  margin-top: auto;
+  padding-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.product-grid-featured .product-card {
+  background: linear-gradient(180deg, var(--white), var(--accent-soft));
+}
+
+.featured-product {
+  background: linear-gradient(135deg, var(--peach), var(--white));
+}
+
+.catalog-hero {
+  width: min(var(--max), 100%);
+  margin-inline: auto;
+  padding: 42px var(--page) 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.06fr) minmax(320px, 0.94fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.catalog-hero h1 {
+  margin-bottom: 16px;
+  color: var(--ink);
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+  font-size: clamp(1.85rem, 4vw, 2.8rem);
+  line-height: 1.28;
+  letter-spacing: 0.01em;
+}
+
+.catalog-hero p {
+  max-width: 560px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.9;
+}
+
+.catalog-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.stat-card {
+  min-height: 132px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.stat-card.strong {
+  grid-row: span 2;
+  color: var(--white);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.stat-card span,
+.stat-card small {
+  color: inherit;
+  opacity: 0.74;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.stat-card strong {
+  color: inherit;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  line-height: 1;
+}
+
+.filter-bar {
+  position: sticky;
+  top: 64px;
+  z-index: 20;
+  width: min(var(--max), 100%);
+  margin: 16px auto 0;
+  padding: 10px var(--page);
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.94);
+  border-block: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+  scrollbar-width: none;
+}
+
+.filter-bar::-webkit-scrollbar { display: none; }
+
+.filter-bar a {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.filter-bar a:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+.source-note,
+.domain-note {
+  display: grid;
+  grid-template-columns: minmax(0, 0.65fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  padding-top: 36px;
+}
+
+.source-note {
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.source-note h2,
+.domain-note h2 {
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+  font-size: clamp(1.15rem, 2.8vw, 1.7rem);
+  line-height: 1.45;
+}
+
+.source-note p,
+.domain-note p {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.85;
+}
+
+.domain-note {
+  padding: 32px var(--page);
+  margin-top: 46px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.domain-note a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.catalog-section {
+  width: min(var(--max), 100%);
+  margin-inline: auto;
+  padding: 48px var(--page) 0;
+  scroll-margin-top: 128px;
+}
+
+.catalog-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.shop-card {
+  position: relative;
+  min-height: 330px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.shop-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, transparent 50%, var(--accent-light) 50%);
+  pointer-events: none;
+}
+
+.shop-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 14px 34px rgba(29, 58, 116, 0.08);
+  transform: translateY(-2px);
+}
+
+.shop-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.point-chip {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.shop-card h3 {
+  margin-bottom: 4px;
+  color: var(--ink);
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.brand-line {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.shop-card p {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.74;
+}
+
+.risk-note {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.risk-note strong {
+  color: var(--ink);
+}
+
+.store-buttons {
+  margin-top: auto;
+  padding-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.store-button {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-align: center;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.store-button:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+.store-button.amazon { background: var(--butter); }
+.store-button.rakuten { background: var(--peach); }
+.store-button.yahoo { background: var(--sky); }
+.store-button.muted {
+  color: var(--muted);
+  background: var(--bg);
 }
 
 /* ─── Article Grid (Hub) ─── */
@@ -1176,7 +1469,10 @@ tr:last-child td {
 /* ─── Mobile ─── */
 @media (max-width: 900px) {
   .home-hero,
-  .feature-layout {
+  .feature-layout,
+  .catalog-hero,
+  .source-note,
+  .domain-note {
     grid-template-columns: 1fr;
   }
 
@@ -1184,7 +1480,8 @@ tr:last-child td {
   .policy-grid,
   .product-grid,
   .article-grid,
-  .related-grid {
+  .related-grid,
+  .catalog-product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1220,6 +1517,10 @@ tr:last-child td {
 
   .home-hero { padding-top: 16px; }
 
+  .filter-bar { top: 104px; }
+
+  .catalog-hero { padding-top: 22px; }
+
   .hero-main { padding: 20px 0; }
 
   .category-grid,
@@ -1227,7 +1528,11 @@ tr:last-child td {
   .product-grid,
   .article-grid,
   .season-strip,
-  .related-grid {
+  .related-grid,
+  .catalog-stats,
+  .catalog-product-grid,
+  .source-note,
+  .domain-note {
     grid-template-columns: 1fr;
   }
 
