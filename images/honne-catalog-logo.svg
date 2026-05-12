@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 58" role="img" aria-label="出産祝い ホンネカタログ">
+  <defs>
+    <linearGradient id="markCoral" x1="0" y1="4" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff7b7d"/>
+      <stop offset="1" stop-color="#ff6568"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect x="2" y="7" width="49" height="42" rx="17" fill="url(#markCoral)"/>
+    <path d="M16 48c2.3-.2 4.5-.8 6.4-1.9l.7-.4h13.4c7.4 0 13.4-5.8 13.4-13V24c0-8.1-6.6-14.6-14.8-14.6H17C8.8 9.4 2.2 15.9 2.2 24v8.7c0 7.2 6 13 13.4 13h.6L16 48z" fill="#ff6568"/>
+    <circle cx="22" cy="27.5" r="5.2" fill="#fff8df"/>
+    <circle cx="34" cy="27.5" r="5.2" fill="#fff8df"/>
+    <path d="M19.4 38.8c2.4-3.6 14.2-3.6 16.6 0" fill="none" stroke="#fff8df" stroke-width="3.7" stroke-linecap="round"/>
+    <path d="M14.2 19.2h25.2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".86"/>
+  </g>
+  <text x="64" y="23" fill="#ff6568" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif" font-size="12" font-weight="700" letter-spacing=".08em">出産祝い</text>
+  <text x="63" y="46" fill="#1d3a74" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif" font-size="26" font-weight="800" letter-spacing=".03em">ホンネカタログ</text>
+  <circle cx="272" cy="16" r="4.4" fill="#fff0f1"/>
+  <circle cx="281" cy="27" r="3.2" fill="#edf8f2"/>
+</svg>

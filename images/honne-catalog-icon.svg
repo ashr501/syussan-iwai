@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ホンネカタログ">
+  <defs>
+    <linearGradient id="coral" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff7b7d"/>
+      <stop offset="1" stop-color="#ff6568"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="8" width="52" height="44" rx="18" fill="url(#coral)"/>
+  <path d="M21 51c2.9-.2 5.7-1 8.2-2.4l.8-.4h14c7.8 0 14-6.1 14-13.8V26c0-8.7-7-15.8-15.8-15.8H21.8C13 10.2 6 17.3 6 26v8.4C6 42.1 12.2 48.2 20 48.2h1.2L21 51z" fill="#ff6568"/>
+  <circle cx="26" cy="28" r="6.2" fill="#fff8df"/>
+  <circle cx="40" cy="28" r="6.2" fill="#fff8df"/>
+  <path d="M23 40c2.6-4.2 15.4-4.2 18 0" fill="none" stroke="#fff8df" stroke-width="4.4" stroke-linecap="round"/>
+  <path d="M17.5 19.5h29" stroke="#fff" stroke-width="2.8" stroke-linecap="round" opacity=".85"/>
+</svg>
