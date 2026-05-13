@@ -1,21 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ホンネカタログ">
   <defs>
-    <linearGradient id="paperWarm" x1="10" y1="8" x2="56" y2="58" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff9f4"/>
-      <stop offset="1" stop-color="#ffe8df"/>
+    <linearGradient id="hcPaper" x1="9" y1="7" x2="55" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffaf6"/>
+      <stop offset="1" stop-color="#ffe9e3"/>
     </linearGradient>
-    <linearGradient id="ribbonCoral" x1="16" y1="10" x2="50" y2="53" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ff8a8c"/>
+    <linearGradient id="hcCoral" x1="16" y1="14" x2="42" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8d8f"/>
       <stop offset="1" stop-color="#ff6568"/>
     </linearGradient>
   </defs>
-  <rect x="4" y="5" width="56" height="54" rx="18" fill="#fff7f2"/>
-  <path d="M13.3 12.5c8.5-2.8 24.2-3.2 36.5.5 3.2 1 5.3 4 5.2 7.4l-.8 26.8c-.1 4.7-4.3 8.1-8.9 7.4-9.7-1.6-21.1-.8-29.6 1.8-4.6 1.4-9.2-2-9.2-6.8V21.3c0-4 2.8-7.4 6.8-8.8z" fill="#fff" stroke="#f6d2c8" stroke-width="1.4"/>
-  <path d="M18.7 15.6c7-1.6 18.3-1.5 27.6.6 2.3.5 3.8 2.5 3.8 4.8l-.7 23.9c-.1 3-2.8 5.2-5.7 4.8-8.2-1.2-17-.6-24.7 1.7-3.1.9-6.2-1.4-6.2-4.6V21.4c0-2.8 2.3-5.1 5.9-5.8z" fill="url(#paperWarm)"/>
-  <path d="M12.5 22.4c8.5-3.2 24-3.1 37.1-.5" fill="none" stroke="#ffb2a6" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M22.8 31h18.4M22.8 37.6h15.8M22.8 44.2h20.5" fill="none" stroke="#1d3a74" stroke-width="2.3" stroke-linecap="round" opacity=".78"/>
-  <path d="M18.6 13.9l5.1 8.7 4.8-10.1 4.5 10.4 5.2-8.6" fill="none" stroke="url(#ribbonCoral)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M28.5 12.7v39" stroke="url(#ribbonCoral)" stroke-width="3.6" stroke-linecap="round"/>
-  <path d="M51.2 36.1c3.8 0 6.8 2.8 6.8 6.2s-3 6.1-6.8 6.1h-3.5l-5.4 4.4 1.2-4.4h-.9c-3.8 0-6.8-2.7-6.8-6.1s3-6.2 6.8-6.2h8.6z" fill="#1d3a74"/>
-  <path d="M42.7 42.3h8.6" stroke="#fff8df" stroke-width="2.2" stroke-linecap="round"/>
+  <rect x="5" y="6" width="54" height="52" rx="17" fill="#fff0f1"/>
+  <path d="M15.2 13.6c8.1-2.3 20.4-2.1 30.3.7 2.5.7 4.2 3 4.2 5.6v29c0 3.3-3 5.7-6.3 5.1-8.7-1.7-18.2-1.1-26.9 1.5-3.4 1-6.8-1.5-6.8-5.1V21.7c0-3.7 2.1-7 5.5-8.1z" fill="#fff" stroke="#f3cbc2" stroke-width="1.4"/>
+  <path d="M20.1 16.1c6.7-1 15.2-.5 21.9 1.1 1.9.5 3.2 2.2 3.2 4.2v25.4c0 2.4-2.2 4.2-4.5 3.8-6.6-1-14.1-.6-21.3 1.3-2.5.6-5-1.3-5-3.9V21.7c0-2.8 2.3-5.1 5.7-5.6z" fill="url(#hcPaper)"/>
+  <path d="M26.2 15.6v36.1" stroke="url(#hcCoral)" stroke-width="4.4" stroke-linecap="round"/>
+  <path d="M26.2 15.8l5.6 8.2 5.5-7.9" fill="none" stroke="url(#hcCoral)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32.8 31h11.6M32.8 38.3h9.4M32.8 45.5h11.8" fill="none" stroke="#1d3a74" stroke-width="2.5" stroke-linecap="round" opacity=".78"/>
+  <rect x="32.6" y="38.6" width="22.8" height="13.6" rx="6.8" fill="#1d3a74"/>
+  <path d="M40 45.4h8.4" stroke="#fff8df" stroke-width="2.5" stroke-linecap="round"/>
 </svg>
