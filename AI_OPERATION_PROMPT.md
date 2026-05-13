@@ -32,18 +32,28 @@
 - 内祝いも最低限知っておきたい人
 
 現在の主要ページ:
-- `index.html`: トップページ
+- `index.html`: トップページ（ヒーロー画像: images/hero.jpg）
 - `articles/unwanted-gifts-ranking.html`: もらって困った出産祝いランキング
 - `articles/appreciated-gifts-ranking.html`: 本当に嬉しかった出産祝いランキング
 - `articles/second-child-gifts.html`: 2人目の出産祝いでもういらないもの・欲しいもの
 - `articles/naoshi-guide.html`: 出産内祝いの基本ガイド
-- `css/style.css`: 全ページ共通CSS
+- `articles/book-card-gift-guide.html`: 図書カード・絵本ギフトガイド
+- `articles/catalog-diaper-cake-trend.html`: カタログギフト・おむつケーキ最新傾向
+- `articles/namaire-gift-guide.html`: 名入れグッズの境界線
+- `articles/okurumi-truth.html`: おくるみはいらない？真相
+- `articles/older-child-gift.html`: 上の子向けプレゼント
+- `articles/second-child-sty.html`: 2人目スタイはいらない？
+- `articles/cash-gift-guide.html`: 現金が一番嬉しい？
+- `articles/mom-selfcare-gift.html`: 産後ママ向けケア用品
+- `css/style.css`: 全ページ共通CSS（1216行）
+- `images/`: 全10記事分の画像（fal-ai/flux-2/klein/4b生成、後日ChatGPT Images 2.0で差し替え予定）
+- `assets/images/`: 既存の手動生成画像
 
 現在のデザイン方向:
-- フレンドリーで生活感のあるメディア
-- 商品棚、プロダクトカード、カテゴリ導線を持つショッピングサイト風
-- 参考感は、生活協同組合系サイトや雑貨通販サイトのような親しみ
-- ただし、色だけ真似るのではなく、情報量、バナー、棚、回遊導線、記事密度を参考にする
+- Baby Band（ベビーバンド）スタイルのクリーンな白ベースデザイン
+- カラー: ピンク #ff6568 / ネイビー #1d3a74 / グレー #f7f6f5
+- フッター: ネイビーべた塗り、白文字
+- ヒーロー: 2カラムグリッド（左テキスト + 右画像）
 
 ## 2. 絶対に守る編集方針
 
