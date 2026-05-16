@@ -2060,6 +2060,16 @@ main > section.full-bleed .inner{
   flex-direction:column;
   gap:12px;
 }
+.persona-avatar{
+  width:86px;
+  aspect-ratio:1;
+  border-radius:50%;
+  object-fit:cover;
+  object-position:center;
+  border:1px solid var(--rule-strong);
+  padding:3px;
+  background:var(--paper);
+}
 .persona-card header,
 .mama-voice header{
   display:flex;
@@ -2115,6 +2125,26 @@ main > section.full-bleed .inner{
   line-height:2;
 }
 
+/* ─── Image crop fixes ─── */
+.home-hero .hero-image-wrap{
+  aspect-ratio:16/9;
+  max-height:none;
+}
+.home-hero .hero-image{
+  object-fit:cover;
+  object-position:center center;
+}
+.article-grid .article-thumb{
+  aspect-ratio:16/9;
+  background:var(--cream);
+}
+.article-grid .article-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+}
+
 @media (max-width: 900px){
   .persona-grid,
   .mama-voice-grid{
@@ -2126,5 +2156,174 @@ main > section.full-bleed .inner{
   .persona-grid,
   .mama-voice-grid{
     grid-template-columns:1fr;
+  }
+}
+
+/* ─── Readability pass: full hero image and clearer typography ─── */
+body{
+  font-family:var(--sans);
+  line-height:1.82;
+}
+.brand .kicker,
+.brand .word{
+  font-family:var(--sans);
+}
+.brand .sub,
+.top-ribbon,
+.section-note,
+.feature-main p,
+.product-body p,
+.article-grid p,
+.policy-grid p,
+.persona-card p,
+.persona-card li,
+.mama-voice p,
+.article-body,
+.article-body p,
+.article-body li,
+.article-body td,
+.callout-body p,
+.callout-body li,
+.ranking-content p,
+.footer-note{
+  font-family:var(--sans);
+}
+.section-heading .kicker .jp,
+.hero-label .jp,
+.cat-badge,
+.feature-link strong,
+.season-card strong,
+.policy-grid h3,
+.product-body h3,
+.article-grid h3,
+.persona-card h3,
+.mama-voice h3{
+  font-family:var(--sans);
+}
+
+main > .home-hero{
+  width:auto;
+  max-width:none;
+  margin:0;
+}
+.home-hero{
+  position:relative;
+  isolation:isolate;
+  min-height:clamp(520px, 74vh, 760px);
+  padding:clamp(56px, 8vw, 96px) var(--page);
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+}
+.home-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:
+    linear-gradient(90deg, rgba(31,28,24,.5) 0%, rgba(31,28,24,.28) 44%, rgba(31,28,24,.08) 100%),
+    linear-gradient(0deg, rgba(31,28,24,.28), rgba(31,28,24,.05));
+  pointer-events:none;
+}
+.hero-main{
+  width:min(620px, 100%);
+  margin-inline:calc((100vw - min(var(--max), 100vw)) / 2);
+  padding:clamp(26px, 4vw, 44px);
+  background:rgba(252,249,242,.9);
+  border:1px solid rgba(44,41,37,.16);
+  box-shadow:0 24px 70px rgba(31,28,24,.18);
+  backdrop-filter:blur(10px);
+}
+.hero-main p{
+  font-size:1rem;
+  color:var(--ink);
+}
+.hero-label{
+  font-family:var(--sans);
+  font-style:normal;
+  font-weight:700;
+  color:var(--accent);
+}
+.ad-disclosure{
+  font-family:var(--sans);
+  font-style:normal;
+  color:var(--ink-soft);
+}
+.hero-side{
+  position:absolute;
+  inset:0;
+  z-index:-2;
+}
+.hero-image-wrap,
+.home-hero .hero-image-wrap{
+  position:absolute;
+  inset:0;
+  aspect-ratio:auto;
+  width:100%;
+  height:100%;
+  background:var(--cream);
+  overflow:hidden;
+}
+.hero-image-wrap::before,
+.home-hero .hero-image-wrap::before{
+  display:none;
+}
+.hero-image,
+.home-hero .hero-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+}
+.hero-issue{
+  right:clamp(20px, 4vw, 48px);
+  left:auto;
+  bottom:clamp(20px, 4vw, 48px);
+}
+.article-grid .article-thumb{
+  aspect-ratio:16/9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.article-grid .article-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+}
+.article-grid .article-thumb img[src*="illust-"]{
+  object-fit:cover;
+  object-position:center center;
+}
+
+@media (max-width:900px){
+  .home-hero{
+    min-height:620px;
+    align-items:flex-end;
+  }
+  .hero-main{
+    margin-inline:auto;
+  }
+}
+
+@media (max-width:560px){
+  .home-hero{
+    min-height:560px;
+    padding:42px var(--page);
+  }
+  .hero-main{
+    padding:22px;
+  }
+  .hero-main h1{
+    font-size:clamp(1.7rem, 9vw, 2.4rem);
+    line-height:1.35;
+  }
+  .hero-main p{
+    font-size:.92rem;
+    line-height:1.9;
+  }
+  .hero-issue{
+    display:none;
   }
 }
