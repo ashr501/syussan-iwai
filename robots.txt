@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ashr501.github.io/syussan-iwai/sitemap.xml
