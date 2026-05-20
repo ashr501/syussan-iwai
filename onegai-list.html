@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お祝いヒントリストをつくる - 出産祝いの本音カタログ</title>
+<meta name="description" content="Amazonのほしい物リストよりふんわり伝えたい人へ。出産祝いで助かるもの、足りているもの、控えめにお願いしたいことを選んで共有できるお祝いヒントリスト。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="images/honne-catalog-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="top-ribbon">
+  <span>直接すぎない、でもちゃんと助かる。出産祝いのヒントリスト。</span>
+</div>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="brand" aria-label="出産祝いの本音カタログ ホーム">
+      <span class="kicker">出産祝い</span>
+      <span class="word">本音<span class="slash">／</span>カタログ</span>
+      <span class="sub">出産祝いを贈るまえに、もらう側の本音</span>
+    </a>
+    <nav class="site-nav" aria-label="主要ナビゲーション">
+      <a href="index.html"><i>01</i>ホーム</a>
+      <a href="products.html"><i>02</i>商品を探す</a>
+      <a href="onegai-list.html" class="active" aria-current="page"><i>03</i>お祝いヒント</a>
+      <a href="articles/unwanted-gifts-ranking.html"><i>04</i>困ったもの</a>
+      <a href="articles/appreciated-gifts-ranking.html"><i>05</i>嬉しかったもの</a>
+      <a href="articles/naoshi-guide.html"><i>06</i>内祝い</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hint-hero">
+    <div>
+      <span class="hero-label">Soft Registry<span class="jp">お祝いヒントリスト</span></span>
+      <h1>ほしい物リストより、<br>やわらかく伝える。</h1>
+      <p>「これを買って」ではなく、「今の暮らしにはこれが助かる」を共有するための試作ページです。贈る側の余白は残しつつ、かぶりやすいものや困りやすいものは先に伝えられます。</p>
+      <div class="hero-actions">
+        <a class="button solid" href="#builder">リストをつくる <em>→</em></a>
+        <a class="button" href="#examples">使い方を見る <em>→</em></a>
+      </div>
+    </div>
+    <aside class="hint-preview-card" aria-label="お祝いヒントリストの例">
+      <span class="cat-badge">Sample card</span>
+      <h2>今助かるもの</h2>
+      <ul>
+        <li>おむつ・おしりふきなどの消耗品</li>
+        <li>上の子にも読める絵本</li>
+        <li>産後の食事を休めるギフトカード</li>
+      </ul>
+      <p>スタイと新生児服は足りています。選ぶなら少し先に使えるものが嬉しいです。</p>
+    </aside>
+  </section>
+
+  <section id="examples" class="section">
+    <div class="section-heading row">
+      <div>
+        <span class="kicker">Concept<span class="jp">方向性</span></span>
+        <h2>海外のレジストリーを、出産祝いの空気に合わせて小さくする<em>。</em></h2>
+      </div>
+      <p class="section-note">Babylistや結婚式レジストリーの「希望をまとめる」発想を、もっと日本の親戚・友人間で使いやすい温度にします。</p>
+    </div>
+    <div class="hint-concept-grid">
+      <article>
+        <span class="policy-num">01</span>
+        <h3>商品名より先に、暮らしの状態</h3>
+        <p>「お下がりが多い」「収納が少ない」「上の子ケアもほしい」など、贈る側が想像しやすい文脈を先に置きます。</p>
+      </article>
+      <article>
+        <span class="policy-num">02</span>
+        <h3>ほしいものと、足りているものを同時に</h3>
+        <p>欲しいものだけ並べると直接的になりがち。足りているものも書くと、相手を責めずに失敗を減らせます。</p>
+      </article>
+      <article>
+        <span class="policy-num">03</span>
+        <h3>最後は余白を残す</h3>
+        <p>具体的な商品リンクへ飛ばす前に、「このカテゴリが嬉しい」までで止める選択肢を持たせます。</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="builder" class="section full-bleed hint-builder-section">
+    <div class="inner">
+      <div class="section-heading row">
+        <div>
+          <span class="kicker">Builder<span class="jp">試作ツール</span></span>
+          <h2>3分で、お祝いヒントカードをつくる<em>。</em></h2>
+        </div>
+        <p class="section-note">入力内容はこのブラウザ内だけで扱います。現時点では会員登録・保存サーバーなしの試作です。</p>
+      </div>
+
+      <div class="hint-builder">
+        <form class="hint-form" id="hint-form">
+          <fieldset>
+            <legend>家族の状況</legend>
+            <label><input type="radio" name="family" value="初めての出産で、必要なものを少しずつ揃えています。" checked>初めてママ</label>
+            <label><input type="radio" name="family" value="2人目で、お下がりは多め。上の子の気持ちも大事にしたいです。">2人目ママ</label>
+            <label><input type="radio" name="family" value="3人育児で、物よりも家事や買い出しの負担が減るものが助かります。">3人ママ</label>
+            <label><input type="radio" name="family" value="復職や保育園準備を見据えて、洗いやすさや時短を重視しています。">復職予定ママ</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>今助かるもの</legend>
+            <label><input type="checkbox" name="want" value="おむつ・おしりふき・BOSなどの消耗品" checked>消耗品</label>
+            <label><input type="checkbox" name="want" value="図書カード・こども商品券・食事系ギフトカード" checked>カード系ギフト</label>
+            <label><input type="checkbox" name="want" value="上の子にも届く絵本や小さなおもちゃ">上の子向け</label>
+            <label><input type="checkbox" name="want" value="宅配食・スープ・カフェインレス飲料などママが休めるもの">ママの休息</label>
+            <label><input type="checkbox" name="want" value="少し先に使える80cm前後の服や洗い替え">少し先の実用品</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>足りています・控えめ希望</legend>
+            <label><input type="checkbox" name="avoid" value="スタイは家に多めにあります。よだれが少ない子だと余りやすいかもしれません。" checked>スタイ</label>
+            <label><input type="checkbox" name="avoid" value="新生児サイズの服はお下がりで足りています。">新生児服</label>
+            <label><input type="checkbox" name="avoid" value="大きいぬいぐるみや飾るものは、収納場所に少し悩みます。">大きな記念品</label>
+            <label><input type="checkbox" name="avoid" value="香りつき・肌に直接使うものは、合うか分からないので確認してもらえると安心です。">スキンケア</label>
+          </fieldset>
+
+          <label class="free-note-label" for="free-note">ひとこと本音</label>
+          <textarea id="free-note" name="note" rows="4">お祝いの気持ちだけで十分嬉しいです。もし選んでもらえるなら、毎日使えるものや家族で使えるものだととても助かります。</textarea>
+        </form>
+
+        <aside class="hint-result" aria-live="polite">
+          <div class="hint-result-card" id="hint-result-card">
+            <span class="cat-badge">My hint list</span>
+            <h2>お祝いヒント</h2>
+            <p id="result-family"></p>
+            <div>
+              <h3>今助かるもの</h3>
+              <ul id="result-want"></ul>
+            </div>
+            <div>
+              <h3>足りています・控えめ希望</h3>
+              <ul id="result-avoid"></ul>
+            </div>
+            <blockquote id="result-note"></blockquote>
+          </div>
+          <div class="hint-share">
+            <button type="button" class="button solid" id="copy-summary">文章をコピー <em>→</em></button>
+            <a class="button" id="share-link" href="onegai-list.html">共有リンクを更新 <em>→</em></a>
+            <p id="copy-status" class="footer-note" role="status"></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading row">
+      <div>
+        <span class="kicker">Next Step<span class="jp">次に育てるなら</span></span>
+        <h2>本格化するなら、予約・匿名質問・カテゴリ別リンクへ<em>。</em></h2>
+      </div>
+    </div>
+    <div class="product-grid hint-next-grid">
+      <article class="product-card">
+        <div class="product-body">
+          <span class="cat-badge">Phase 01</span>
+          <h3>共有カード化</h3>
+          <p>このページのように、家族状況と欲しいカテゴリを1枚のカードにして送れる状態。最小実装は静的サイトでも可能です。</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-body">
+          <span class="cat-badge">Phase 02</span>
+          <h3>かぶり防止</h3>
+          <p>贈る側が「このカテゴリで考え中」とだけ押せる仕組み。商品名を確定させず、サプライズ感を残せます。</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-body">
+          <span class="cat-badge">Phase 03</span>
+          <h3>商品棚と接続</h3>
+          <p>カテゴリごとに本音カタログの商品棚へ案内。アフィリエイトとも相性がよく、サイトの収益導線になります。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-mast">
+      <div class="brand" style="align-items:flex-start">
+        <span class="kicker">出産祝い</span>
+        <span class="word">本音<span class="slash">／</span>カタログ</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">ホーム</a>
+        <a href="products.html">商品を探す</a>
+        <a href="onegai-list.html">お祝いヒント</a>
+        <a href="articles/second-child-gifts.html">2人目</a>
+        <a href="articles/unwanted-gifts-ranking.html">困ったもの</a>
+        <a href="articles/appreciated-gifts-ranking.html">嬉しかったもの</a>
+        <a href="articles/naoshi-guide.html">内祝い</a>
+      </div>
+    </div>
+    <p class="footer-note">このページはお祝いヒントリストの試作です。商品購入や決済は外部サービス側で行う設計を想定しています。</p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const form = document.querySelector("#hint-form");
+  const familyEl = document.querySelector("#result-family");
+  const wantEl = document.querySelector("#result-want");
+  const avoidEl = document.querySelector("#result-avoid");
+  const noteEl = document.querySelector("#result-note");
+  const copyButton = document.querySelector("#copy-summary");
+  const statusEl = document.querySelector("#copy-status");
+  const shareLink = document.querySelector("#share-link");
+
+  const getChecked = (name) => Array.from(form.querySelectorAll(`[name="${name}"]:checked`)).map((item) => item.value);
+  const renderList = (target, items, fallback) => {
+    target.innerHTML = "";
+    const list = items.length ? items : [fallback];
+    list.forEach((text) => {
+      const li = document.createElement("li");
+      li.textContent = text;
+      target.appendChild(li);
+    });
+  };
+
+  const makeSummary = () => {
+    const family = form.family.value;
+    const wants = getChecked("want");
+    const avoids = getChecked("avoid");
+    const note = form.note.value.trim();
+    return [
+      "お祝いヒント",
+      family,
+      "",
+      "今助かるもの",
+      ...(wants.length ? wants.map((item) => `・${item}`) : ["・お気持ちだけで十分です"]),
+      "",
+      "足りています・控えめ希望",
+      ...(avoids.length ? avoids.map((item) => `・${item}`) : ["・特にありません"]),
+      "",
+      note
+    ].join("\n");
+  };
+
+  const update = () => {
+    const wants = getChecked("want");
+    const avoids = getChecked("avoid");
+    familyEl.textContent = form.family.value;
+    renderList(wantEl, wants, "お気持ちだけで十分です");
+    renderList(avoidEl, avoids, "特にありません");
+    noteEl.textContent = form.note.value.trim();
+
+    const params = new URLSearchParams(new FormData(form));
+    shareLink.href = `${location.pathname}?${params.toString()}`;
+  };
+
+  const hydrate = () => {
+    const params = new URLSearchParams(location.search);
+    if (!params.size) return;
+    form.querySelectorAll("input[type='checkbox']").forEach((input) => {
+      input.checked = params.getAll(input.name).includes(input.value);
+    });
+    form.querySelectorAll("input[type='radio']").forEach((input) => {
+      input.checked = params.get(input.name) === input.value;
+    });
+    if (params.has("note")) form.note.value = params.get("note");
+  };
+
+  hydrate();
+  update();
+  form.addEventListener("input", update);
+  copyButton.addEventListener("click", async () => {
+    const text = makeSummary();
+    try {
+      await navigator.clipboard.writeText(text);
+      statusEl.textContent = "コピーしました。LINEやメールに貼って共有できます。";
+    } catch {
+      statusEl.textContent = "コピーできない場合は、カードの文章を選択してコピーしてください。";
+    }
+  });
+})();
+</script>
+</body>
+</html>
