@@ -2600,3 +2600,68 @@ main > .home-hero{
     width:100%;
   }
 }
+
+/* ─── Readability override: reduce delicate italic labels ─── */
+.top-ribbon em,
+.site-nav a i,
+.hero-label,
+.button em,
+.ad-disclosure,
+.hero-issue em,
+.section-heading .kicker,
+.category-grid a i,
+.cat-badge,
+.feature-link .feature-link-label,
+.season-card-label,
+.policy-num,
+.product-body .price,
+.persona-card .role,
+.mama-voice .role,
+.footer-note{
+  font-family:var(--sans);
+  font-style:normal;
+  font-weight:700;
+  letter-spacing:.08em;
+}
+.hero-label,
+.section-heading .kicker,
+.cat-badge,
+.feature-link .feature-link-label,
+.season-card-label,
+.persona-card .role,
+.mama-voice .role{
+  color:var(--accent);
+}
+.site-nav a i,
+.category-grid a i,
+.button em,
+.hero-issue em,
+.footer-note{
+  color:var(--ink-soft);
+}
+.section-heading .kicker .jp,
+.hero-label .jp,
+.brand .sub,
+.category-grid a small,
+.section-note,
+.feature-main p,
+.policy-grid p,
+.product-body p,
+.article-grid p,
+.footer-links{
+  font-family:var(--sans);
+  font-style:normal;
+  font-weight:500;
+  letter-spacing:.03em;
+}
+.brand .kicker{
+  font-family:var(--sans);
+  font-weight:700;
+  letter-spacing:.22em;
+}
+.hero-main h1 em,
+.section-heading h2 em{
+  font-family:var(--sans);
+  font-style:normal;
+  font-weight:700;
+}
