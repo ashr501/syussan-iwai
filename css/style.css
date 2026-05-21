@@ -2559,3 +2559,44 @@ main > .home-hero{
     padding:22px;
   }
 }
+
+/* ─── Production layout stability override ─── */
+.site-header-inner{
+  width:min(var(--max), 100%);
+  max-width:100%;
+}
+.site-nav{
+  flex-wrap:nowrap;
+  min-width:0;
+}
+.site-nav a{
+  flex:0 0 auto;
+}
+@media (max-width:1100px){
+  .site-nav{
+    display:none;
+  }
+  .site-header-inner{
+    justify-content:center;
+  }
+  .brand{
+    align-items:center;
+    text-align:center;
+  }
+}
+@media (max-width:560px){
+  .top-ribbon{
+    font-size:.68rem;
+    line-height:1.7;
+  }
+  .brand .word{
+    font-size:1.3rem;
+  }
+  .home-hero{
+    min-height:auto;
+    padding:36px var(--page);
+  }
+  .hero-main{
+    width:100%;
+  }
+}
