@@ -6,14 +6,24 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://honne-catalog.com/products.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://honne-catalog.com/onegai-list.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://honne-catalog.com/articles/unwanted-gifts-ranking.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://honne-catalog.com/about.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://honne-catalog.com/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://honne-catalog.com/articles/appreciated-gifts-ranking.html</loc>
@@ -21,17 +31,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://honne-catalog.com/articles/second-child-gifts.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://honne-catalog.com/articles/naoshi-guide.html</loc>
+    <loc>https://honne-catalog.com/articles/book-card-gift-guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://honne-catalog.com/articles/book-card-gift-guide.html</loc>
+    <loc>https://honne-catalog.com/articles/cash-gift-guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -41,9 +46,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://honne-catalog.com/articles/mom-selfcare-gift.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://honne-catalog.com/articles/namaire-gift-guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://honne-catalog.com/articles/naoshi-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://honne-catalog.com/articles/okurumi-truth.html</loc>
@@ -56,28 +71,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://honne-catalog.com/articles/second-child-gifts.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://honne-catalog.com/articles/second-child-sty.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://honne-catalog.com/articles/cash-gift-guide.html</loc>
+    <loc>https://honne-catalog.com/articles/unwanted-gifts-ranking.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://honne-catalog.com/articles/mom-selfcare-gift.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://honne-catalog.com/about.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://honne-catalog.com/privacy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
