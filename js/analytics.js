@@ -5,7 +5,7 @@
   例: var MEASUREMENT_ID = "G-XXXXXXXXXX";
 */
 (function () {
-  var MEASUREMENT_ID = "";
+  var MEASUREMENT_ID = "G-T7SNLMP0L5";
   if (!MEASUREMENT_ID) return;
 
   var script = document.createElement("script");
