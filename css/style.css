@@ -2318,6 +2318,9 @@ main > .home-hero{
     min-height:560px;
     padding:42px var(--page);
   }
+  .home-hero .hero-image{
+    object-position:65% center;
+  }
   .hero-main{
     padding:22px;
   }

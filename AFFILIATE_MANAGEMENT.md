@@ -31,25 +31,11 @@ amazon: {
 
 ## 楽天
 
-楽天アフィリエイトでリンクテンプレートを使う場合は、`affiliateUrlTemplate` に入れます。
-
-```js
-rakuten: {
-  affiliateUrlTemplate: "https://hb.afl.rakuten.co.jp/hgc/YOUR_ID/?pc={url}&m={url}"
-}
-```
-
-`{url}` は商品検索URL、`{query}` は商品名に自動置換されます。
+楽天の公式リンク作成画面で商品ごとに発行したURLを、下記の `products` に登録します。未発行のURLを推測して作らないでください。検索リンクは収益化されません。
 
 ## Yahoo / ValueCommerceなど
 
-ASP側でURLラップ形式のテンプレートがある場合は、Yahoo側に入れます。
-
-```js
-yahoo: {
-  affiliateUrlTemplate: "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=YOUR_SID&pid=YOUR_PID&vc_url={url}"
-}
-```
+ASPで提携承認後、そのプログラムのリンク作成画面から発行したURLを商品別に登録します。契約前にURLラップ形式を自作しないでください。
 
 ## 商品ごとに個別URLを指定したい場合
 
@@ -70,7 +56,17 @@ products: {
 
 ## 運用ルール
 
-- 広告リンクには自動で `rel="sponsored noopener"` が入ります。
+- 設定済みの広告リンクには `rel="sponsored noopener"`、通常のショップ検索リンクには `rel="noopener"` が入ります。
 - 商品価格・在庫は遷移先で確認してもらう前提です。
-- ステマ規制対応のため、広告表記は削除しないでください。
-- 独自ドメインが決まったら `canonicalDomain` と `sitemap.xml` を更新します。
+- 広告リンクが1件でも有効になったら、サイト冒頭と対象のSNS投稿に明瞭な「広告・PR」表記を入れます。
+- `canonicalDomain` は現在 `https://honne-catalog.com` です。
+
+## 申請順序
+
+1. サイトURLとSNSの公開プロフィールを確定し、プライバシーポリシー・連絡先・広告表示を整える。
+2. 楽天アフィリエイトでサイト情報を登録し、公式のリンク作成画面から商品ごとのURLを発行する。
+3. Amazonアソシエイトを申請する。申請後180日以内に3件以上の適格販売が必要で、Amazonがサイトを審査する。
+4. Yahoo等はASPで該当プログラムへ提携申請し、承認後に発行リンクを設定する。
+5. `products` にURLを登録し、実際に遷移と計測を確認してから広告表示を公開する。
+
+申請時の氏名、住所、振込先、税務情報、規約同意はサイト所有者が確認して入力してください。IDや決済情報はリポジトリに保存しません。

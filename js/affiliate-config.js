@@ -8,7 +8,7 @@ window.HONNE_AFFILIATE_CONFIG = {
   site: {
     canonicalDomain: "https://honne-catalog.com",
     disclosure:
-      "当サイトはアフィリエイト広告を利用しています。掲載商品は編集方針に基づき選定し、購入リンクの一部から収益を得る場合があります。"
+      "広告・PR：当サイトはアフィリエイト広告を利用しています。購入リンクの一部から収益を得る場合があります。"
   },
 
   stores: {

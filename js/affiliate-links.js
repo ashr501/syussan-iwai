@@ -42,11 +42,22 @@
     return applyTemplate(store.affiliateUrlTemplate, withParams, query);
   };
 
-  const normalizeLink = (link) => {
+  const normalizeLink = (link, sponsored) => {
     link.setAttribute("target", "_blank");
-    link.setAttribute("rel", "sponsored noopener");
+    link.setAttribute("rel", sponsored ? "sponsored noopener" : "noopener");
     link.setAttribute("data-affiliate-managed", "true");
   };
+
+  const isSponsored = (storeKey, override) => {
+    if (hasValue(override)) return true;
+    const store = config.stores && config.stores[storeKey];
+    if (!store) return false;
+    return storeKey === "amazon"
+      ? hasValue(store.associateTag)
+      : hasValue(store.affiliateUrlTemplate);
+  };
+
+  let hasAdvertisingLinks = false;
 
   const replaceOfficialPlaceholder = (container, url) => {
     const current = container.querySelector(".store-button.muted");
@@ -56,7 +67,7 @@
     link.className = current.className;
     link.href = url;
     link.textContent = current.textContent || "公式確認";
-    normalizeLink(link);
+    normalizeLink(link, false);
     current.replaceWith(link);
   };
 
@@ -76,13 +87,17 @@
       }
 
       link.href = url;
-      normalizeLink(link);
+      const sponsored = isSponsored(storeKey, overrides[storeKey]);
+      normalizeLink(link, sponsored);
+      hasAdvertisingLinks ||= sponsored;
     });
 
     replaceOfficialPlaceholder(container, overrides.official);
   });
 
   document.querySelectorAll("[data-affiliate-disclosure]").forEach((node) => {
-    node.textContent = config.site && config.site.disclosure ? config.site.disclosure : node.textContent;
+    if (hasAdvertisingLinks && config.site && config.site.disclosure) {
+      node.textContent = config.site.disclosure;
+    }
   });
 })();
