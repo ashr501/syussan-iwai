@@ -17,6 +17,7 @@ import re
 import ssl
 import sys
 import urllib.request
+from urllib.parse import parse_qs, urlparse
 from html.parser import HTMLParser
 
 # macOSのPythonは証明書ストア未設定のことがある。certifiがあれば使い、
@@ -34,16 +35,6 @@ except ImportError:
         SSL_CONTEXT = ssl._create_unverified_context()
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-AFFILIATE_HOSTS = (
-    "amazon.co.jp",
-    "amzn.to",
-    "rakuten.co.jp",
-    "shopping.yahoo.co.jp",
-    "a8.net",
-    "valuecommerce",
-    "moshimo",
-    "af.moshimo.com",
-)
 DISCLOSURE_KEYWORDS = ("広告", "PR")
 
 
@@ -62,7 +53,15 @@ class LinkCollector(HTMLParser):
 
 
 def is_affiliate(url):
-    return any(host in url for host in AFFILIATE_HOSTS)
+    parsed = urlparse(url)
+    host = (parsed.hostname or "").lower()
+    if host in ("amzn.to", "hb.afl.rakuten.co.jp", "af.moshimo.com"):
+        return True
+    if host.endswith((".a8.net", ".valuecommerce.com")):
+        return True
+    if host in ("amazon.co.jp", "www.amazon.co.jp"):
+        return bool(parse_qs(parsed.query).get("tag"))
+    return False
 
 
 def check_http(url, timeout=10):
@@ -86,6 +85,7 @@ def check_http(url, timeout=10):
 def main():
     do_http = "--http" in sys.argv
     problems = []
+    notices = []
     external_urls = {}  # url -> [pages]
 
     pages = [
@@ -132,7 +132,7 @@ def main():
         if empty_templates:
             unset.append(f"affiliateUrlTemplate 未設定 {empty_templates}件 (rakuten/yahoo)")
         if unset:
-            problems.append(f"[未設定] js/affiliate-config.js: {', '.join(unset)}")
+            notices.append(f"[申請待ち] js/affiliate-config.js: {', '.join(unset)}")
 
     # analytics.js の未設定チェック
     analytics_path = os.path.join(ROOT, "js", "analytics.js")
@@ -147,6 +147,8 @@ def main():
                 problems.append(f"[外部リンクNG {status}] {url[:90]} (使用: {', '.join(sorted(set(sources))[:3])})")
 
     print(f"\n=== リンク点検レポート ({len(pages)}ページ) ===")
+    for notice in notices:
+        print(notice)
     if problems:
         for p in problems:
             print(p)
