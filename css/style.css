@@ -2994,3 +2994,98 @@ main > .home-hero{
 }
 .home-v3 .voice-pair .voice-yes{ border-color:#4f8a62 }
 .home-v3 .voice-pair .voice-no{ border-color:#b2735c }
+
+/* ─── Photo presentation ─── */
+/* Feature: family photo beside the verdict, tips in a row below */
+.home-v3 .verdict{ grid-template-columns:minmax(0, 1fr) minmax(0, 1fr); gap:0 }
+.home-v3 .verdict-photo{ position:relative; order:2; min-height:100%; background:var(--cream) }
+.home-v3 .verdict-photo img{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; object-position:100% 40%;
+}
+.home-v3 .verdict-photo figcaption,
+.home-v3 .hero-issue{ font-family:var(--sans) }
+.home-v3 .verdict-photo figcaption{
+  position:absolute; right:0; bottom:0;
+  font-size:.74rem; font-weight:500; letter-spacing:.06em; line-height:1.6;
+  color:var(--ink); background:rgba(252,249,242,.92); padding:4px 12px;
+}
+.home-v3 .verdict-main{ order:1 }
+.home-v3 .tip-list{
+  order:3; grid-column:1 / -1; margin-top:20px;
+  flex-direction:row; gap:16px;
+}
+.home-v3 .tip-list a{ align-items:flex-start; padding:22px 20px; gap:14px }
+.home-v3 .tip-list a:hover{ transform:translateY(-3px) }
+
+/* Reading list: one lead story, photo-first cards */
+.home-v3 .article-grid article{
+  position:relative; border-radius:0; border-color:var(--rule);
+  box-shadow:0 14px 30px -26px rgba(44,41,37,.5);
+}
+.home-v3 .article-grid .article-thumb{ aspect-ratio:3 / 2 }
+.home-v3 .article-grid .cat-badge{
+  position:absolute; top:14px; left:0; margin:0;
+  background:var(--paper); padding:5px 14px 5px 12px; letter-spacing:.08em;
+}
+.home-v3 .article-grid .cat-badge::before{ display:none }
+.home-v3 .article-grid h3{ margin-top:18px }
+@media (min-width:901px){
+  .home-v3 .article-grid article.lead{
+    grid-column:span 2;
+    display:grid; grid-template-columns:minmax(0, 1.55fr) minmax(0, 1fr);
+    grid-template-rows:1fr auto auto 1fr; column-gap:8px;
+  }
+  .home-v3 .article-grid article.lead .article-thumb{
+    grid-column:1; grid-row:1 / -1; aspect-ratio:auto; height:100%;
+  }
+  .home-v3 .article-grid article.lead .article-thumb img{ object-position:92% 50% }
+  .home-v3 .article-grid article.lead h3{
+    grid-column:2; grid-row:2; margin:0 26px 12px;
+    font-size:1.3rem; line-height:1.65;
+  }
+  .home-v3 .article-grid article.lead p{
+    grid-column:2; grid-row:3; margin:0 26px; font-size:1rem; line-height:1.9;
+  }
+}
+
+/* Personas: larger portraits */
+.home-v3 .persona-avatar{ width:76px; height:76px; flex:0 0 76px; padding:0; border:2px solid #fff; box-shadow:0 0 0 1px var(--rule-strong) }
+
+@media (max-width:900px){
+  .home-v3 .verdict{ grid-template-columns:1fr }
+  .home-v3 .verdict-photo{ order:1; aspect-ratio:16 / 10; min-height:0 }
+  .home-v3 .verdict-main{ order:2 }
+  .home-v3 .tip-list{ flex-direction:column; gap:12px; margin-top:16px }
+  .home-v3 .tip-list a{ align-items:center }
+
+  /* Hero: show the whole family first, copy underneath */
+  .home-v3 .home-hero{
+    display:flex; flex-direction:column; align-items:stretch;
+    min-height:0; padding:0 0 8px; overflow:visible;
+  }
+  .home-v3 .home-hero::before{ display:none }
+  .home-v3 .hero-side{ position:relative; inset:auto; z-index:0; order:1 }
+  .home-v3 .home-hero .hero-image-wrap{ position:relative; inset:auto; aspect-ratio:4 / 3; height:auto }
+  .home-v3 .home-hero .hero-image{ object-position:82% 50% }
+  .home-v3 .hero-issue{ display:none }
+  .home-v3 .hero-main{
+    order:2; position:relative; z-index:1;
+    width:auto; margin:-28px var(--page) 0; padding:26px 22px 24px;
+    background:var(--paper); backdrop-filter:none;
+    box-shadow:0 18px 40px -28px rgba(31,28,24,.45);
+  }
+}
+@media (max-width:560px){
+  .home-v3 .article-grid article{ box-shadow:none; border:none; border-top:1px solid var(--rule); background:none; min-height:0 }
+  .home-v3 .article-grid .article-thumb{ aspect-ratio:4 / 3; grid-row:1 / span 2 }
+  .home-v3 .article-grid .cat-badge{ position:static; background:none; padding:0; align-self:end }
+  .home-v3 .article-grid h3{ margin:0 }
+  .home-v3 .article-grid article.lead{
+    display:flex; flex-direction:column; padding:0 0 22px; border-top:none; gap:0;
+  }
+  .home-v3 .article-grid article.lead .article-thumb{ aspect-ratio:3 / 2; margin-bottom:14px }
+  .home-v3 .article-grid article.lead .cat-badge{ margin-bottom:4px; align-self:flex-start }
+  .home-v3 .article-grid article.lead h3{ font-size:1.2rem; line-height:1.6; margin-bottom:6px }
+  .home-v3 .article-grid article.lead p{ display:block; margin:0 }
+}
