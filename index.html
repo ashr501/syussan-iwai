@@ -10,10 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="images/honne-catalog-icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css?v=20260924-launch">
+<link rel="stylesheet" href="css/style.css?v=20261114-home">
 <script src="js/analytics.js" defer></script>
 </head>
-<body data-screen-label="01 Home">
+<body class="home-v3" data-screen-label="01 Home">
 <div class="top-ribbon">
   <span>贈る前に、もらう側の本音を一度だけ見ておく。</span>
   <em>— a candid gift guide</em>
@@ -42,7 +42,7 @@
 
   <section class="home-hero">
     <div class="hero-main">
-      <span class="hero-label">Editorial 01<span class="jp">口コミで選ぶ ／ ギフトカタログ</span></span>
+      <span class="hero-label">口コミで選ぶギフトカタログ</span>
       <h1>
         <span>本当に助かる、</span>
         <span>2人目ギフト<em>。</em></span>
@@ -50,8 +50,7 @@
       <p>上の子のお下がりがある家庭には、かわいいだけの贈り物が少し負担になることも。口コミで見かける本音を、買う前に読みやすくまとめました。</p>
       <div class="hero-actions">
         <a class="button solid" href="#second-baby">2人目の選び方 <em>→</em></a>
-        <a class="button" href="onegai-list.html">お祝いヒントを作る <em>→</em></a>
-        <a class="button" href="products.html">商品を探す <em>→</em></a>
+        <a class="button" href="#gift-shelf">ギフト棚を見る <em>→</em></a>
       </div>
       <p class="ad-disclosure">掲載商品は用途と贈りやすさをもとに編集しています。広告リンクを掲載する際は明記します。</p>
     </div>
@@ -67,173 +66,253 @@
     </aside>
   </section>
 
-  <nav class="category-grid" aria-label="目的別カテゴリ">
-    <a href="#second-baby">
-      <i>—　Category 01</i>
-      <strong>2人目に贈る</strong>
-      <small>お下がり前提で考える</small>
-    </a>
-    <a href="articles/unwanted-gifts-ranking.html">
-      <i>—　Category 02</i>
-      <strong>困ったものを避ける</strong>
-      <small>買う前のチェック</small>
-    </a>
-    <a href="products.html">
-      <i>—　Category 03</i>
-      <strong>商品を探す</strong>
-      <small>本音で選ぶ商品棚</small>
-    </a>
-    <a href="onegai-list.html">
-      <i>—　Category 04</i>
-      <strong>お祝いヒントを作る</strong>
-      <small>やわらかく希望を伝える</small>
-    </a>
-    <a href="articles/naoshi-guide.html">
-      <i>—　Category 05</i>
-      <strong>内祝いの基本</strong>
-      <small>別サイト化も見据える</small>
-    </a>
-  </nav>
-
   <section id="second-baby" class="section">
     <div class="section-heading">
-      <span class="kicker">Feature 01<span class="jp">今月の特集</span></span>
+      <span class="eyebrow">今月の特集</span>
       <h2>2人目の出産祝いは、家族全体で考える<em>。</em></h2>
     </div>
 
-    <div class="feature-layout">
-      <article class="feature-main">
-        <span class="cat-badge">編集部の結論</span>
-        <h3>迷ったら「消耗品＋上の子にも少し」が強いです。</h3>
+    <div class="verdict">
+      <article class="verdict-main">
+        <span class="verdict-label">編集部の結論</span>
+        <h3>迷ったら<br><mark>「消耗品＋上の子にも少し」</mark><br>が強いです。</h3>
         <p>2人目は、赤ちゃん用品がすでに揃っていることが多め。おむつやギフトカードのように確実に使えるものへ寄せると、相手も受け取りやすくなります。</p>
-        <a class="button" href="articles/second-child-gifts.html">2人目ガイドを読む <em>→</em></a>
+        <a class="button solid" href="articles/second-child-gifts.html">2人目ガイドを読む <em>→</em></a>
       </article>
 
-      <div class="feature-side">
-        <a href="articles/second-child-gifts.html" class="feature-link">
-          <span class="feature-link-label">服を贈るなら</span>
-          <strong>新生児サイズより、少し先の80cm前後。</strong>
-        </a>
-        <a href="articles/appreciated-gifts-ranking.html" class="feature-link">
-          <span class="feature-link-label">味気なく見えない工夫</span>
-          <strong>現金やカードには、短い手書きメモを添える。</strong>
-        </a>
-        <a href="articles/unwanted-gifts-ranking.html" class="feature-link">
-          <span class="feature-link-label">避けたいもの</span>
-          <strong>大きい・被る・好みが分かれるものは確認してから。</strong>
-        </a>
-      </div>
+      <ol class="tip-list">
+        <li>
+          <a href="articles/second-child-gifts.html">
+            <span class="tip-num" aria-hidden="true">1</span>
+            <span class="tip-body">
+              <span class="tip-label">服を贈るなら</span>
+              <strong>新生児サイズより、少し先の80cm前後。</strong>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="articles/appreciated-gifts-ranking.html">
+            <span class="tip-num" aria-hidden="true">2</span>
+            <span class="tip-body">
+              <span class="tip-label">味気なく見えない工夫</span>
+              <strong>現金やカードには、短い手書きメモを添える。</strong>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="articles/unwanted-gifts-ranking.html">
+            <span class="tip-num" aria-hidden="true">3</span>
+            <span class="tip-body">
+              <span class="tip-label">避けたいもの</span>
+              <strong>大きい・被る・好みが分かれるものは確認してから。</strong>
+            </span>
+          </a>
+        </li>
+      </ol>
     </div>
+
+    <nav class="more-links" aria-label="あわせて読む">
+      <h3>あわせて読む</h3>
+      <ul>
+        <li><a href="articles/unwanted-gifts-ranking.html"><span>買う前の5分</span><strong>贈ってから気まずくならないための確認リスト</strong></a></li>
+        <li><a href="products.html"><span>実用品特集</span><strong>おむつ・おしりふき・ギフトカードの選び方</strong></a></li>
+        <li><a href="onegai-list.html"><span>共有するなら</span><strong>ほしい物リストよりやわらかい、お祝いヒントカード</strong></a></li>
+        <li><a href="articles/naoshi-guide.html"><span>お返しの基本</span><strong>内祝いは半返しだけ覚えればいい？</strong></a></li>
+      </ul>
+    </nav>
   </section>
 
-  <section class="section" style="padding-top:0">
-    <div class="season-strip" aria-label="特集バナー">
-      <a class="season-card" href="articles/unwanted-gifts-ranking.html">
-        <span class="season-card-label">— 買う前の5分</span>
-        <strong>贈ってから気まずくならないための確認リスト</strong>
-      </a>
-      <a class="season-card" href="products.html">
-        <span class="season-card-label">— 実用品特集</span>
-        <strong>おむつ・おしりふき・ギフトカードの選び方</strong>
-      </a>
-      <a class="season-card" href="onegai-list.html">
-        <span class="season-card-label">— 共有するなら</span>
-        <strong>ほしい物リストよりやわらかい、お祝いヒントカード</strong>
-      </a>
-      <a class="season-card" href="articles/naoshi-guide.html">
-        <span class="season-card-label">— お返しの基本</span>
-        <strong>内祝いは半返しだけ覚えればいい？</strong>
-      </a>
-    </div>
-  </section>
-
-  <section class="section full-bleed" aria-label="編集方針">
+  <section id="gift-shelf" class="section full-bleed shelf-section">
     <div class="inner">
       <div class="section-heading">
-        <span class="kicker">Editorial Policy<span class="jp">編集方針</span></span>
-        <h2>おすすめする前に、困る理由も書きます<em>。</em></h2>
-      </div>
-      <div class="policy-grid" style="background:var(--paper)">
-        <article>
-          <span class="policy-num">01</span>
-          <h3>口コミの言葉を、そのまま鵜呑みにしない</h3>
-          <p>「困った」「助かった」の理由を、収納・サイズ・好み・2人目事情に分けて確認します。</p>
-        </article>
-        <article>
-          <span class="policy-num">02</span>
-          <h3>広告枠でも、注意点を併記する</h3>
-          <p>商品リンクを入れる場合も、向いている家庭と避けたい家庭を同じ場所に書きます。</p>
-        </article>
-        <article>
-          <span class="policy-num">03</span>
-          <h3>2人目の悩みを中心に育てる</h3>
-          <p>競合の多い一般論ではなく、お下がり・上の子・消耗品・現金の渡し方に絞って深掘りします。</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="gift-shelf" class="section">
-    <div class="section-heading row">
-      <div>
-        <span class="kicker">Gift Shelf<span class="jp">ギフト棚</span></span>
+        <span class="eyebrow">ギフト棚</span>
         <h2>商品名まで見て、贈る前に絞り込む<em>。</em></h2>
+        <p class="section-lead">1,871件の商品リサーチをもとに、Amazon ／ 楽天 ／ Yahoo で探しやすい候補を4つの棚に分けました。</p>
       </div>
-      <p class="section-note">1,871件の商品リサーチをもとに、Amazon ／ 楽天 ／ Yahoo で探しやすい候補を並べました。</p>
-    </div>
 
-    <div class="product-grid">
-      <article class="product-card large featured-product">
-        <div class="product-body">
-          <span class="cat-badge">まず外しにくい</span>
-          <h3>こども商品券・図書カード・食事系ギフト</h3>
-          <p class="price">¥1,000 – ¥5,000</p>
-          <p>2人目でも使い道を相手に委ねられる棚。味気なさは、短い手書きメッセージでかなり和らぎます。</p>
-          <div class="buy-buttons">
-            <a class="button solid" href="products.html#money">商品を見る <em>→</em></a>
-            <a class="button" href="articles/cash-gift-guide.html">渡し方を読む <em>→</em></a>
+      <ol class="shelf-index" aria-label="棚の一覧">
+        <li><a href="#shelf-money"><span class="shelf-index-no">棚 1</span><strong>まず外しにくい</strong><span class="shelf-index-price">¥1,000〜¥5,000</span></a></li>
+        <li><a href="#shelf-daily"><span class="shelf-index-no">棚 2</span><strong>消耗品</strong><span class="shelf-index-price">¥1,000〜¥7,000</span></a></li>
+        <li><a href="#shelf-sibling"><span class="shelf-index-no">棚 3</span><strong>上の子にも</strong><span class="shelf-index-price">¥2,000〜¥5,000</span></a></li>
+        <li><a href="#shelf-ask"><span class="shelf-index-no">棚 4</span><strong>確認してから</strong><span class="shelf-index-price">¥3,000〜¥30,000</span></a></li>
+      </ol>
+
+      <div class="shelf-grid">
+
+        <article class="shelf-bay tone-butter" id="shelf-money">
+          <div class="shelf-display" aria-hidden="true">
+            <span class="shelf-no">棚 1</span>
+            <svg viewBox="0 0 240 96" class="shelf-art">
+              <rect x="22" y="38" width="74" height="48" rx="5" class="fill-a"/>
+              <path d="M22 54h74" class="ln"/>
+              <rect x="22" y="38" width="74" height="48" rx="5" class="ln"/>
+              <path d="M32 70h22M32 77h14" class="ln"/>
+              <rect x="108" y="24" width="50" height="62" rx="3" class="fill-b"/>
+              <rect x="108" y="24" width="50" height="62" rx="3" class="ln"/>
+              <path d="M133 24v62M108 50h50" class="ln"/>
+              <path d="M133 50c-10-14-22-4-10 0M133 50c10-14 22-4 10 0" class="ln"/>
+              <path d="M172 62h50c0 14-10 24-25 24s-25-10-25-24z" class="fill-a"/>
+              <path d="M172 62h50c0 14-10 24-25 24s-25-10-25-24z" class="ln"/>
+              <path d="M188 52c0-6 5-6 5-12M201 52c0-6 5-6 5-12" class="ln"/>
+            </svg>
           </div>
-        </div>
-      </article>
+          <div class="shelf-info">
+            <span class="shelf-tag">まず外しにくい</span>
+            <h3>こども商品券・図書カード・食事系ギフト</h3>
+            <dl class="shelf-price">
+              <dt>予算の目安</dt>
+              <dd>¥1,000<span>〜</span>¥5,000</dd>
+            </dl>
+            <p>2人目でも使い道を相手に委ねられる棚。味気なさは、短い手書きメッセージでかなり和らぎます。</p>
+            <div class="shelf-items">
+              <h4>この棚の商品例</h4>
+              <ul>
+                <li>こども商品券e-Gift</li>
+                <li>図書カードネットギフト（5000円）</li>
+                <li>Uber Eats ギフトカード 5000円</li>
+              </ul>
+            </div>
+            <div class="shelf-actions">
+              <a class="button solid" href="products.html#money">商品を見る <em>→</em></a>
+              <a class="button" href="articles/cash-gift-guide.html">渡し方を読む <em>→</em></a>
+            </div>
+          </div>
+        </article>
 
-      <article class="product-card">
-        <div class="product-body">
-          <span class="cat-badge">消耗品</span>
-          <h3>BOS・おしりふき・おむつ</h3>
-          <p class="price">¥1,000 – ¥7,000</p>
-          <p>華やかさより実用性。サイズやメーカーだけ確認できれば、2人目にも強い候補です。</p>
-          <div class="buy-buttons"><a class="button" href="products.html#daily">商品を見る <em>→</em></a></div>
-        </div>
-      </article>
+        <article class="shelf-bay tone-mint" id="shelf-daily">
+          <div class="shelf-display" aria-hidden="true">
+            <span class="shelf-no">棚 2</span>
+            <svg viewBox="0 0 240 96" class="shelf-art">
+              <rect x="24" y="26" width="62" height="60" rx="6" class="fill-a"/>
+              <rect x="24" y="26" width="62" height="60" rx="6" class="ln"/>
+              <path d="M40 26c0-10 30-10 30 0" class="ln"/>
+              <circle cx="55" cy="58" r="12" class="ln"/>
+              <rect x="98" y="52" width="68" height="34" rx="6" class="fill-b"/>
+              <rect x="98" y="52" width="68" height="34" rx="6" class="ln"/>
+              <rect x="116" y="60" width="32" height="12" rx="6" class="ln"/>
+              <rect x="98" y="34" width="68" height="18" rx="5" class="fill-a"/>
+              <rect x="98" y="34" width="68" height="18" rx="5" class="ln"/>
+              <path d="M182 44h36l-4 42h-28z" class="fill-b"/>
+              <path d="M182 44h36l-4 42h-28z" class="ln"/>
+              <path d="M190 44c0-12 20-12 20 0" class="ln"/>
+            </svg>
+          </div>
+          <div class="shelf-info">
+            <span class="shelf-tag">消耗品</span>
+            <h3>BOS・おしりふき・おむつ</h3>
+            <dl class="shelf-price">
+              <dt>予算の目安</dt>
+              <dd>¥1,000<span>〜</span>¥7,000</dd>
+            </dl>
+            <p>華やかさより実用性。サイズやメーカーだけ確認できれば、2人目にも強い候補です。</p>
+            <div class="shelf-items">
+              <h4>この棚の商品例</h4>
+              <ul>
+                <li>おむつが臭わない袋BOSベビー用セット</li>
+                <li>肌へのいちばんおしりふき（56枚×6）×2個</li>
+                <li>さらさらケア テープ S70枚×4個（280枚）</li>
+              </ul>
+            </div>
+            <div class="shelf-actions">
+              <a class="button solid" href="products.html#daily">商品を見る <em>→</em></a>
+            </div>
+          </div>
+        </article>
 
-      <article class="product-card">
-        <div class="product-body">
-          <span class="cat-badge">上の子にも</span>
-          <h3>絵本・小さなおもちゃ</h3>
-          <p class="price">¥2,000 – ¥5,000</p>
-          <p>赤ちゃんだけでなく上の子にも届くと、家族全体で受け取りやすい贈り物になります。</p>
-          <div class="buy-buttons"><a class="button" href="products.html#second-child">商品を見る <em>→</em></a></div>
-        </div>
-      </article>
+        <article class="shelf-bay tone-sky" id="shelf-sibling">
+          <div class="shelf-display" aria-hidden="true">
+            <span class="shelf-no">棚 3</span>
+            <svg viewBox="0 0 240 96" class="shelf-art">
+              <rect x="26" y="22" width="46" height="64" rx="3" class="fill-a"/>
+              <rect x="26" y="22" width="46" height="64" rx="3" class="ln"/>
+              <path d="M34 22v64" class="ln"/>
+              <circle cx="53" cy="48" r="9" class="ln"/>
+              <path d="M44 68h18" class="ln"/>
+              <rect x="76" y="30" width="40" height="56" rx="3" class="fill-b"/>
+              <rect x="76" y="30" width="40" height="56" rx="3" class="ln"/>
+              <path d="M84 30v56" class="ln"/>
+              <rect x="134" y="60" width="26" height="26" rx="3" class="fill-a"/>
+              <rect x="134" y="60" width="26" height="26" rx="3" class="ln"/>
+              <rect x="160" y="60" width="26" height="26" rx="3" class="fill-b"/>
+              <rect x="160" y="60" width="26" height="26" rx="3" class="ln"/>
+              <rect x="147" y="34" width="26" height="26" rx="3" class="fill-b"/>
+              <rect x="147" y="34" width="26" height="26" rx="3" class="ln"/>
+              <circle cx="208" cy="72" r="14" class="fill-a"/>
+              <circle cx="208" cy="72" r="14" class="ln"/>
+              <path d="M196 65c8 4 16 4 24 0" class="ln"/>
+            </svg>
+          </div>
+          <div class="shelf-info">
+            <span class="shelf-tag">上の子にも</span>
+            <h3>絵本・小さなおもちゃ</h3>
+            <dl class="shelf-price">
+              <dt>予算の目安</dt>
+              <dd>¥2,000<span>〜</span>¥5,000</dd>
+            </dl>
+            <p>赤ちゃんだけでなく上の子にも届くと、家族全体で受け取りやすい贈り物になります。</p>
+            <div class="shelf-items">
+              <h4>この棚の商品例</h4>
+              <ul>
+                <li>せな けいこの絵本2冊セット</li>
+                <li>布絵本 ハッピーアニマル</li>
+                <li>カラフルおでかけ砂場セット</li>
+              </ul>
+            </div>
+            <div class="shelf-actions">
+              <a class="button solid" href="products.html#second-child">商品を見る <em>→</em></a>
+            </div>
+          </div>
+        </article>
 
-      <article class="product-card">
-        <div class="product-body">
-          <span class="cat-badge">確認してから</span>
-          <h3>チェア・ベビーカー用品</h3>
-          <p class="price">¥3,000 – ¥30,000</p>
-          <p>便利だけれど、サプライズには不向き。欲しい型番が分かっている時に強い棚です。</p>
-          <div class="buy-buttons"><a class="button" href="products.html#ask-first">商品を見る <em>→</em></a></div>
-        </div>
-      </article>
+        <article class="shelf-bay tone-ask" id="shelf-ask">
+          <div class="shelf-display" aria-hidden="true">
+            <span class="shelf-no">棚 4</span>
+            <svg viewBox="0 0 240 96" class="shelf-art">
+              <path d="M40 20h34v30H40z" class="fill-a"/>
+              <path d="M40 20h34v30H40z" class="ln"/>
+              <path d="M34 50h46v8H34z" class="fill-b"/>
+              <path d="M34 50h46v8H34z" class="ln"/>
+              <path d="M42 58l-8 28M72 58l8 28M38 74h38" class="ln"/>
+              <path d="M128 34c0-14 30-18 44 0v20h-44z" class="fill-a"/>
+              <path d="M128 34c0-14 30-18 44 0v20h-44z" class="ln"/>
+              <path d="M122 54h62l-8 16h-46z" class="fill-b"/>
+              <path d="M122 54h62l-8 16h-46z" class="ln"/>
+              <path d="M184 54l20-30h10" class="ln"/>
+              <circle cx="136" cy="80" r="6" class="ln"/>
+              <circle cx="172" cy="80" r="6" class="ln"/>
+              <path d="M136 70v4M172 70v4" class="ln"/>
+            </svg>
+          </div>
+          <div class="shelf-info">
+            <span class="shelf-tag">確認してから</span>
+            <h3>チェア・ベビーカー用品</h3>
+            <dl class="shelf-price">
+              <dt>予算の目安</dt>
+              <dd>¥3,000<span>〜</span>¥30,000</dd>
+            </dl>
+            <p>便利だけれど、サプライズには不向き。欲しい型番が分かっている時に強い棚です。</p>
+            <div class="shelf-items">
+              <h4>この棚の商品例</h4>
+              <ul>
+                <li>ふかふかベビーチェア</li>
+                <li>チェアベルト ホールド プラス ネイビー</li>
+                <li>ベビーカー＆ベビーキャリア用ポータブル扇風機 ブラック</li>
+              </ul>
+            </div>
+            <div class="shelf-actions">
+              <a class="button solid" href="products.html#ask-first">商品を見る <em>→</em></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-heading row">
-      <div>
-        <span class="kicker">Reading List<span class="jp">読みもの</span></span>
-        <h2>買う前に読んでおきたい本音<em>。</em></h2>
-      </div>
+  <section id="reading" class="section">
+    <div class="section-heading">
+      <span class="eyebrow">読みもの</span>
+      <h2>買う前に読んでおきたい本音<em>。</em></h2>
     </div>
 
     <div class="article-grid">
@@ -308,67 +387,85 @@
 
   <section class="section full-bleed" aria-label="ママの本音ペルソナ">
     <div class="inner">
-      <div class="section-heading row">
-        <div>
-          <span class="kicker">Mama Voices<span class="jp">本音の読み手</span></span>
-          <h2>4つの育児目線から、贈り物を見直す<em>。</em></h2>
-        </div>
-        <p class="section-note">以下の4人は、贈り物を選ぶ視点を整理するための架空のペルソナです。写真も生成画像で、記事のコメントは実在の方への取材・引用ではありません。</p>
+      <div class="section-heading">
+        <span class="eyebrow">本音の読み手</span>
+        <h2>4つの育児目線から、贈り物を見直す<em>。</em></h2>
+        <p class="section-lead">以下の4人は、贈り物を選ぶ視点を整理するための架空のペルソナです。写真も生成画像で、記事のコメントは実在の方への取材・引用ではありません。</p>
       </div>
 
       <div class="persona-grid">
         <article class="persona-card">
-          <img class="persona-avatar" src="images/persona-misaki.jpg" alt="初めてママ・美咲さんのプロフィール画像" loading="lazy">
           <header>
-            <span class="role">First-time mom</span>
+            <img class="persona-avatar" src="images/persona-misaki.jpg" alt="初めてママ・美咲さんのプロフィール画像" loading="lazy">
             <h3>初めてママ・美咲さん</h3>
           </header>
           <p>30歳。0歳2か月の男の子を育児中。ベビー用品はまだ手探りで、収納少なめのマンション暮らし。</p>
-          <ul>
-            <li>嬉しい：すぐ使える消耗品、食事系ギフト</li>
-            <li>困った：大きい記念品、使い方が難しい育児グッズ</li>
-          </ul>
+          <dl class="voice-pair">
+            <div class="voice-yes"><dt>嬉しい</dt><dd>すぐ使える消耗品、食事系ギフト</dd></div>
+            <div class="voice-no"><dt>困った</dt><dd>大きい記念品、使い方が難しい育児グッズ</dd></div>
+          </dl>
         </article>
 
         <article class="persona-card">
-          <img class="persona-avatar" src="images/persona-saori.jpg" alt="2人ママ・沙織さんのプロフィール画像" loading="lazy">
           <header>
-            <span class="role">Two kids mom</span>
+            <img class="persona-avatar" src="images/persona-saori.jpg" alt="2人ママ・沙織さんのプロフィール画像" loading="lazy">
             <h3>2人ママ・沙織さん</h3>
           </header>
           <p>34歳。4歳の上の子と0歳の赤ちゃん。お下がりが多く、赤ちゃん返り中の上の子ケアも大事。</p>
-          <ul>
-            <li>嬉しい：上の子向け絵本＋おむつ</li>
-            <li>困った：新生児服、スタイの追加</li>
-          </ul>
+          <dl class="voice-pair">
+            <div class="voice-yes"><dt>嬉しい</dt><dd>上の子向け絵本＋おむつ</dd></div>
+            <div class="voice-no"><dt>困った</dt><dd>新生児服、スタイの追加</dd></div>
+          </dl>
         </article>
 
         <article class="persona-card">
-          <img class="persona-avatar" src="images/persona-yuki.jpg" alt="3人ママ・由紀さんのプロフィール画像" loading="lazy">
           <header>
-            <span class="role">Three kids mom</span>
+            <img class="persona-avatar" src="images/persona-yuki.jpg" alt="3人ママ・由紀さんのプロフィール画像" loading="lazy">
             <h3>3人ママ・由紀さん</h3>
           </header>
           <p>38歳。小学生、園児、0歳の3人育児。物よりも、家事と買い出しの負担が減るものを重視。</p>
-          <ul>
-            <li>嬉しい：ギフトカード、宅配食、日用品ストック</li>
-            <li>困った：飾るもの、管理が増えるもの</li>
-          </ul>
+          <dl class="voice-pair">
+            <div class="voice-yes"><dt>嬉しい</dt><dd>ギフトカード、宅配食、日用品ストック</dd></div>
+            <div class="voice-no"><dt>困った</dt><dd>飾るもの、管理が増えるもの</dd></div>
+          </dl>
         </article>
 
         <article class="persona-card">
-          <img class="persona-avatar" src="images/persona-nao.jpg" alt="復職予定ママ・奈央さんのプロフィール画像" loading="lazy">
           <header>
-            <span class="role">Working mom</span>
+            <img class="persona-avatar" src="images/persona-nao.jpg" alt="復職予定ママ・奈央さんのプロフィール画像" loading="lazy">
             <h3>復職予定ママ・奈央さん</h3>
           </header>
           <p>32歳。育休後に復職予定。保育園準備も見据えて、洗いやすさ・名前つけ・時短を意識。</p>
-          <ul>
-            <li>嬉しい：洗い替え、実用小物、図書カード</li>
-            <li>困った：手洗い必須の服、繊細すぎる素材</li>
-          </ul>
+          <dl class="voice-pair">
+            <div class="voice-yes"><dt>嬉しい</dt><dd>洗い替え、実用小物、図書カード</dd></div>
+            <div class="voice-no"><dt>困った</dt><dd>手洗い必須の服、繊細すぎる素材</dd></div>
+          </dl>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="section" aria-label="編集方針">
+    <div class="section-heading">
+      <span class="eyebrow">編集方針</span>
+      <h2>おすすめする前に、困る理由も書きます<em>。</em></h2>
+    </div>
+    <div class="policy-grid">
+      <article>
+        <span class="policy-num">01</span>
+        <h3>口コミの言葉を、そのまま鵜呑みにしない</h3>
+        <p>「困った」「助かった」の理由を、収納・サイズ・好み・2人目事情に分けて確認します。</p>
+      </article>
+      <article>
+        <span class="policy-num">02</span>
+        <h3>広告枠でも、注意点を併記する</h3>
+        <p>商品リンクを入れる場合も、向いている家庭と避けたい家庭を同じ場所に書きます。</p>
+      </article>
+      <article>
+        <span class="policy-num">03</span>
+        <h3>2人目の悩みを中心に育てる</h3>
+        <p>競合の多い一般論ではなく、お下がり・上の子・消耗品・現金の渡し方に絞って深掘りします。</p>
+      </article>
     </div>
   </section>
 
