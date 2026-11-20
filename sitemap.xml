@@ -32,11 +32,13 @@
   </url>
   <url>
     <loc>https://honne-catalog.com/articles/book-card-gift-guide.html</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://honne-catalog.com/articles/cash-gift-guide.html</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -47,6 +49,7 @@
   </url>
   <url>
     <loc>https://honne-catalog.com/articles/mom-selfcare-gift.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -67,6 +70,7 @@
   </url>
   <url>
     <loc>https://honne-catalog.com/articles/older-child-gift.html</loc>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -82,6 +86,7 @@
   </url>
   <url>
     <loc>https://honne-catalog.com/articles/unwanted-gifts-ranking.html</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -104,5 +109,29 @@
     <loc>https://honne-catalog.com/articles/second-child-gift-budget.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://honne-catalog.com/articles/kids-disaster-goods.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://honne-catalog.com/articles/winter-warm-goods.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://honne-catalog.com/articles/new-products-wishlist.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://honne-catalog.com/articles/hapitas-points-gift-guide.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
