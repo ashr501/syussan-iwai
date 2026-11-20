@@ -14,7 +14,7 @@ window.HONNE_AFFILIATE_CONFIG = {
   stores: {
     amazon: {
       enabled: true,
-      associateTag: "", // Example: honnecatalog-22
+      associateTag: "honne-catalog-22",
       searchUrl: "https://www.amazon.co.jp/s",
       queryParam: "k",
       extraParams: {}
