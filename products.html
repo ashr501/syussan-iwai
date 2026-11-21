@@ -11,7 +11,16 @@
 <link rel="icon" href="images/honne-catalog-icon.svg?v=20260514-logo3" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css?v=20261114-home">
 <script src="js/analytics.js" defer></script>
-<style>.shop-card-img{display:block;width:100%;max-width:220px;height:auto;border-radius:12px;margin:4px 0 10px}</style>
+<style>.shop-card-img{display:block;width:100%;max-width:220px;height:auto;border-radius:12px;margin:4px 0 10px}
+.shelf-filter{position:sticky;top:0;z-index:20;background:var(--bg);padding:14px 0 10px;margin-bottom:6px}
+.shelf-filter-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.shelf-chip{appearance:none;border:1px solid var(--line);background:#fff;color:var(--body);border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer}
+.shelf-chip.active{background:var(--ink);border-color:var(--ink);color:#fff}
+.shelf-filter-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.shelf-search{flex:1;min-width:200px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:15px;background:#fff;color:var(--body)}
+.shelf-count{font-size:13px;color:var(--muted)}
+.shelf-noresult{display:none;padding:28px 0;text-align:center;color:var(--muted)}
+</style>
 </head>
 <body>
 <div class="top-ribbon">
@@ -86,6 +95,23 @@
     </div>
     <p>ここに並べている商品は、今どきの出産・育児系カタログで見かける候補をもとにした編集リストです。税込価格は確認時点の販売価格です。最新の価格・送料・詳しい仕様・在庫は、各ショップで確認してください。</p>
   </section>
+
+  <div class="shelf-filter" id="shelf-filter">
+    <div class="shelf-filter-chips" role="group" aria-label="棚で絞り込む">
+      <button type="button" class="shelf-chip active" data-shelf="all">すべて</button>
+      <button type="button" class="shelf-chip" data-shelf="money">金券・カード</button>
+      <button type="button" class="shelf-chip" data-shelf="second-child">2人目・上の子</button>
+      <button type="button" class="shelf-chip" data-shelf="daily">消耗品・食品</button>
+      <button type="button" class="shelf-chip" data-shelf="mom">ママ向け</button>
+      <button type="button" class="shelf-chip" data-shelf="ask-first">確認してから</button>
+      <button type="button" class="shelf-chip" data-shelf="avoid">かぶりやすい</button>
+    </div>
+    <div class="shelf-filter-row">
+      <input type="search" class="shelf-search" id="shelf-search" placeholder="キーワードで探す（例：おしりふき、スープ、スタイ）" aria-label="商品をキーワードで探す">
+      <span class="shelf-count" id="shelf-count"></span>
+    </div>
+  </div>
+  <p class="shelf-noresult" id="shelf-noresult">条件に合う商品がありません。キーワードや棚を変えてみてください。</p>
 
   <section id="money" class="catalog-section">
     <div class="section-heading row">
@@ -805,5 +831,41 @@
 </footer>
 <script src="js/affiliate-config.js"></script>
 <script src="js/affiliate-links.js"></script>
+<script>
+(function () {
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.shelf-chip'));
+  var search = document.getElementById('shelf-search');
+  var count = document.getElementById('shelf-count');
+  var noresult = document.getElementById('shelf-noresult');
+  var sections = Array.prototype.slice.call(document.querySelectorAll('.catalog-section'));
+  var activeShelf = 'all';
+  function apply() {
+    var q = (search.value || '').trim().toLowerCase();
+    var shown = 0;
+    sections.forEach(function (sec) {
+      var shelfOk = activeShelf === 'all' || sec.id === activeShelf;
+      var visibleInSection = 0;
+      Array.prototype.forEach.call(sec.querySelectorAll('.shop-card'), function (card) {
+        var ok = shelfOk && (q === '' || card.textContent.toLowerCase().indexOf(q) !== -1);
+        card.style.display = ok ? '' : 'none';
+        if (ok) { visibleInSection++; shown++; }
+      });
+      sec.style.display = visibleInSection > 0 ? '' : 'none';
+    });
+    count.textContent = shown + '点を表示';
+    noresult.style.display = shown === 0 ? 'block' : 'none';
+  }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      activeShelf = chip.getAttribute('data-shelf');
+      apply();
+    });
+  });
+  search.addEventListener('input', apply);
+  apply();
+})();
+</script>
 </body>
 </html>
