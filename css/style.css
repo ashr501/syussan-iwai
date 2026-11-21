@@ -1420,6 +1420,14 @@ tr:last-child td {
   border-color: var(--accent);
 }
 
+.related-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
 .related-card .cat-badge {
   margin-bottom: 6px;
 }
