@@ -30,7 +30,7 @@ window.HONNE_AFFILIATE_CONFIG = {
         Example:
         "https://hb.afl.rakuten.co.jp/hgc/YOUR_ID/?pc={url}&m={url}"
       */
-      affiliateUrlTemplate: ""
+      affiliateUrlTemplate: "https://hb.afl.rakuten.co.jp/ichiba/59e946f2.589bb169.59e946f3.2ac485dc/?pc={url}&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
     },
     yahoo: {
       enabled: true,
