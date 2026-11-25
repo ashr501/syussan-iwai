@@ -3232,3 +3232,37 @@ main h1, main h2, main h3{ font-family:var(--sans) }
   .home-v3 .shelf-bay, .home-v3 img.shelf-art, .home-v3 .tip-list a{ transition:none }
   .home-v3 .shelf-bay:hover, .home-v3 .shelf-bay:hover img.shelf-art{ transform:none }
 }
+
+/* ─── Product Card (article) ─── */
+.product-card {
+  margin: 4px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--white);
+}
+.product-card > a { display: block; }
+.product-card img { display: block; width: 100%; height: auto; }
+.product-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  background: var(--accent-soft);
+  border-top: 1px solid var(--line);
+}
+.product-card-price { color: var(--ink); font-size: 1rem; font-weight: 700; }
+.product-card-price small { font-size: 0.75rem; font-weight: 400; color: #666; }
+.product-card-btn {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 9px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.product-card-btn:hover { opacity: 0.85; }
