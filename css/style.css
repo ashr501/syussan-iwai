@@ -3264,5 +3264,11 @@ main h1, main h2, main h3{ font-family:var(--sans) }
   border-radius: 999px;
   text-decoration: none;
   white-space: nowrap;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  min-height: 40px;
 }
 .product-card-btn:hover { opacity: 0.85; }
