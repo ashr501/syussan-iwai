@@ -3255,7 +3255,7 @@ main h1, main h2, main h3{ font-family:var(--sans) }
 }
 .product-card-price { color: var(--ink); font-size: 1rem; font-weight: 700; }
 .product-card-price small { font-size: 0.75rem; font-weight: 400; color: #666; }
-.product-card-btn {
+.product-card .product-card-btn {
   background: var(--accent);
   color: #fff;
   font-size: 0.9rem;
@@ -3271,4 +3271,4 @@ main h1, main h2, main h3{ font-family:var(--sans) }
   line-height: 1.4;
   min-height: 40px;
 }
-.product-card-btn:hover { opacity: 0.85; }
+.product-card .product-card-btn:hover { opacity: 0.85; }
